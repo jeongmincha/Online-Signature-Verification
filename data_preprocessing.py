@@ -97,7 +97,6 @@ def image_load_file(path, uid):
 def image_load_dir(path):
     filenames = os.listdir(path)
     person_num = len(filenames)
-    print(person_num)
     
     uid_table = np.zeros((person_num,))
     image_d_list = []
@@ -118,6 +117,7 @@ def image_load_dir(path):
     arri = np.array([np.array(i) for i in image_d_list])
     arru = np.array(uid_d_list)
     arrf = np.array(isF_d_list)
+    print (arri.shape)
     return  arri, arru, arrf, uid_table
 
 
