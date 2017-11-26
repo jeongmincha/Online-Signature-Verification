@@ -31,7 +31,7 @@ def resize_image(path, width=750, height=360):
                 bi_im = Image.fromarray(bi_tx)
                 bi_im.save(outfile, "PNG")
             except IOError:
-                print "cannot create thumbnail for '%s'" % infile
+                print ("cannot create thumbnail for '%s'" % infile)
 
 
 def resize_image_dir(path, width=750, height=360):
