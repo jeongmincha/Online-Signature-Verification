@@ -1,3 +1,6 @@
 data/
 .ipynb_checkpoints/
 .idea/
+save/
+__pycache__/
+*.pyc
